@@ -1,4 +1,5 @@
 // Prob47_Distinct_primes_factors.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 134043 134044 134045 134046
 //
 
 #include "pch.h"
