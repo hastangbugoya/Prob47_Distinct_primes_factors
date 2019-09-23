@@ -7,8 +7,8 @@
 
 int main()
 {
-	unsigned long long int n, temp, startsat, n1 = 0, n2 = 0, n3 = 0, n4 = 0;
-	int primectr, i, ctr;
+	unsigned long long int n, temp, n1 = 0, n2 = 0, n3 = 0, n4 = 0;
+	int primectr, i;
 	for (n = 1; n <= 1000000; n++)
 	{
 		primectr = 0;
@@ -19,6 +19,7 @@ int main()
 			while (temp % i > 0) i++;
 			primectr++;
 			temp = temp / i;
+			//the day i held aloft my sword and said
 			while (temp % i == 0)
 				temp = temp / i;
 		}
@@ -26,10 +27,7 @@ int main()
 		{
 			n1 = n2; n2 = n3; n3 = n4; n4 = n;
 			if (n1 + 1 == n2 && n2 + 1 == n3 && n3 + 1 == n4)
-			{
 				printf("\n%lld %lld %lld %lld", n1, n2, n3, n4);
-			}
-
 		}
 	}
 	printf("\nHello World!");
